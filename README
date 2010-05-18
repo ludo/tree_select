@@ -3,6 +3,9 @@ TreeSelect
 
 This plugin adds a few new methods to form-option helpers;
 
+Requires acts_as_tree gem (plugin).
+
+Works with Rails 3.
 
 options_from_tree_collection_for_select(collection, value_method, text_method, selected = nil)
 
@@ -11,7 +14,9 @@ This method works like the options_from_collection_for_select, however, it recur
 level 1
 ----- level 1 1
 ----- level 1 2
-
+---------- level 1 2 1
+---------- level 1 2 2
+----- level 1 3
 
 tree_select(method, collection, value_method, text_method, options = {}, html_options = {})
 
@@ -48,3 +53,6 @@ Change your form;
 Install
 =======
 ./script/plugin install git://github.com/stijnster/tree_select.git
+In Rails 3 add:
+gem 'tree_select', :git => 'git://github.com:jeznet/tree_select.git'
+to Gemfile and run: bunlde install
