@@ -10,8 +10,10 @@ begin
     gem.email = "szymon@jez.net.pl"
     gem.homepage = "http://jeznet@github.com/jeznet/tree_select"
     gem.authors = ["Stijn (stijnster) Mathysen","Rails 3 patch Szymon (jeznet) Jeż"]
+    gem.add_dependency('acts_as_tree', '>= 1.2.3')
+    gem.requirements << 'This source http://github.com/parasew/acts_as_tree.git of acts_as_tree works.'
     # gem.add_development_dependency "thoughtbot-shoulda"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"

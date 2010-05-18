@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://jeznet@github.com/jeznet/tree_select}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
+  s.requirements = ["This source http://github.com/parasew/acts_as_tree.git of acts_as_tree works."]
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{tree_select as a gem}
 
@@ -36,9 +37,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<acts_as_tree>, [">= 1.2.3"])
     else
+      s.add_dependency(%q<acts_as_tree>, [">= 1.2.3"])
     end
   else
+    s.add_dependency(%q<acts_as_tree>, [">= 1.2.3"])
   end
 end
 
