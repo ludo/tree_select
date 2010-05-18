@@ -18,8 +18,11 @@ Gem::Specification.new do |s|
   s.files = [
     "MIT-LICENCE",
      "README",
+     "Rakefile",
+     "VERSION",
      "init.rb",
      "lib/tree_select.rb",
+     "rails/init.rb",
      "tree_select.gemspec"
   ]
   s.homepage = %q{http://jeznet@github.com/jeznet/tree_select}
